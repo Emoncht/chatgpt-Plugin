@@ -1,0 +1,122 @@
+/**
+ * OpenAI Chatbot Admin CSS
+ */
+
+.openai-chatbot-dashboard {
+    margin-top: 20px;
+}
+
+.openai-chatbot-conversation-list {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.conversation-item {
+    cursor: pointer;
+    padding: 8px;
+    transition: background-color 0.2s;
+}
+
+.conversation-item:hover {
+    background-color: #f8f9fa;
+}
+
+.conversation-item.active {
+    background-color: #e9ecef;
+}
+
+.openai-chatbot-conversation-messages {
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    padding: 15px;
+}
+
+.message-item {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.message-right {
+    justify-content: flex-end;
+}
+
+.message-left {
+    justify-content: flex-start;
+}
+
+.message-bubble {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 18px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.message-bubble-user {
+    background-color: #0084ff;
+    color: white;
+    border-bottom-right-radius: 5px;
+}
+
+.message-bubble-assistant {
+    background-color: #e9ecef;
+    border-bottom-left-radius: 5px;
+}
+
+.message-content {
+    margin-bottom: 5px;
+}
+
+.message-time {
+    font-size: 10px;
+    opacity: 0.7;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Custom styling for Bootstrap components */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.btn-group {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.badge {
+    font-weight: 500;
+}
+
+/* System settings page */
+.openai-chatbot-settings-page .form-table th {
+    width: 200px;
+}
+
+#system_prompt {
+    min-height: 100px;
+}
+
+#welcome_message {
+    min-height: 80px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .openai-chatbot-conversation-messages {
+        height: 300px;
+    }
+}
